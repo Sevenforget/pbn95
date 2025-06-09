@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 245, 245, 250;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-rgb: 10, 10, 20;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4 {
+  color: rgb(var(--foreground-rgb));
+  margin-top: 1.5em;
+  margin-bottom: 0.75em;
+}
+
+.prose h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.prose h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(var(--foreground-rgb), 0.1);
+  padding-bottom: 0.5rem;
+}
+
+.prose p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.prose a {
+  color: #9333ea;
+  text-decoration: underline;
+}
+
+.prose a:hover {
+  color: #7e22ce;
+}
+
+@media (prefers-color-scheme: dark) {
+  .prose a {
+    color: #c084fc;
+  }
+
+  .prose a:hover {
+    color: #d8b4fe;
+  }
+}
