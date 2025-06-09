@@ -34,6 +34,7 @@ export interface Post {
   slug?: string;
   id?: string | number;
   readTime?: string;
+  coverImage?: string;
 }
 
 // 에러 타입 정의
